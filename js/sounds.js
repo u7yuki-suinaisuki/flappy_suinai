@@ -104,7 +104,7 @@ exports.preload = function() {
     'ouch': {},
     'flap': {},
     'gameover': {},
-    'score': {count: settings.scoreSounds}
+//    'score': {count: settings.scoreSounds}
   };
 
   var opts;

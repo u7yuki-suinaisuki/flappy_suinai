@@ -144,7 +144,7 @@ function addScore() {
 
 function updateScoreText() {
   scoreText.setText(
-    '+ %s YEARS'.replace('%s', score * 5)
+    '%s 腿毛'.replace('%s', score * 1)
   );
 }
 

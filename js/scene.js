@@ -15,7 +15,7 @@ function setLoadingText(percent) {
   if (percent <= 0)
     percent = -1;
   loadingText.setText(
-    '请注意 倒车\n\n历史的行程: %s %'.replace('%s', percent)
+    '穗奈祈祷中： %s %'.replace('%s', percent)
   );
 }
 
@@ -51,7 +51,7 @@ function createTitle() {
   title = global.phaserGame.add.text(
     global.phaserGame.width / 2,
     120,
-    'FlappyWinnie',
+    'FlappySuinai',
     {
       font: 'bold 40pt Arial',
       fill: '#fff',
@@ -151,10 +151,10 @@ function createTexts() {
 
 function showScore() {
   scoreText.setText(
-    '连任 %s 年'.replace('%s', global.score * 5)
+    '获得 %s 个腿毛'.replace('%s', global.score)
   );
   bestScoreText.setText(
-    'BEST %s 年'.replace('%s', global.bestScore * 5)
+    'BEST %s 个腿毛'.replace('%s', global.bestScore)
   );
 
   scoreBoardSprite.visible = true;

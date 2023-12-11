@@ -3,6 +3,7 @@ require.register('main.js', function(exports, require, module) {
 
 var global = require('global');
 var sounds = require('sounds');
+var scene = require('scene');
 var utils = require('utils');
 
 var settings = global.settings;
@@ -10,6 +11,10 @@ var settings = global.settings;
 function preload() {
   global.phaserGame.stage.scaleMode = Phaser.StageScaleMode.SHOW_ALL;
   global.phaserGame.stage.scale.setScreenSize(true);
+
+  sounds.preload();
+  scene.preload();
+}
 
 function create() {
   sounds.create();

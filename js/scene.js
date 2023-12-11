@@ -15,7 +15,7 @@ function setLoadingText(percent) {
   if (percent <= 0)
     percent = -1;
   loadingText.setText(
-    '穗乃女子力： %s %'.replace('%s', percent)
+    '穗奈祈祷中： %s %'.replace('%s', percent)
   );
 }
 

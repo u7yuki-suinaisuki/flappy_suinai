@@ -139,7 +139,6 @@ function checkCollision() {
 function addScore() {
   score += 1;
   updateScoreText();
-  sounds('score').play();
 }
 
 function updateScoreText() {
@@ -156,8 +155,6 @@ function endGame() {
   }
 
   setTimeout(function() {
-    sounds('score').stop();
-    sounds('gameover').play();
     onGameOver();
   }, 500);
 }
